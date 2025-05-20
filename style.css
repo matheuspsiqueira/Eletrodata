@@ -1,0 +1,70 @@
+body{
+    background-color: #fdfaf5;
+}
+
+/* Gradiente da Navbar */
+.navbar-gradient {
+  background: linear-gradient(to right, #00558C, #012169, #00558C);
+}
+
+/* Links da Navbar */
+.navbar-nav .nav-link {
+  color: white !important;
+  position: relative;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+/* Sublinhado rosa com animação da esquerda pra direita */
+.navbar-nav .nav-link:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #E0004D;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Estilo do Dropdown */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 2px;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Estilo do menu dropdown */
+.dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+  margin-top: 0; /* remove atraso */
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  display: block; /* mantemos block para manipular via opacity */
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #00558c !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #E0004D !important;
+  background-color: #ffffff;
+}
+
+/* Tamanho da logo */
+.navbar-brand img {
+  height: 50px;
+  margin-left: 15%;
+}
