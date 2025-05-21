@@ -1,5 +1,12 @@
+:root {
+  --default-font: "Roboto";
+  --heading-font: "Roboto",  sans-serif;
+  --nav-font: "Roboto",  sans-serif;
+}
+
 body{
     background-color: #fdfaf5;
+    font-family: var(--default-font);
 }
 
 /* Gradiente da Navbar */
@@ -22,6 +29,7 @@ body{
   left: 0;
   bottom: 0;
   height: 2px;
+  top: 0;
   width: 0;
   background-color: #E0004D;
   transition: width 0.3s ease-in-out;
@@ -34,7 +42,6 @@ body{
 /* Estilo do Dropdown */
 .dropdown:hover .dropdown-menu {
   display: block;
-  margin-top: 2px;
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
