@@ -10,13 +10,13 @@ body{
     overflow-x: hidden;
 }
 
-/* Gradiente da Navbar */
+/* NAVBAR */
+
 .navbar-gradient {
   background: linear-gradient(to right, #00558C, #012169);
   height: 85px;
 }
 
-/* Links da Navbar */
 .navbar-nav .nav-link {
   color: white !important;
   position: relative;
@@ -25,7 +25,6 @@ body{
   font-size: 17px;
 }
 
-/* Sublinhado rosa com animação da esquerda pra direita */
 .navbar-nav .nav-link:after {
   content: '';
   position: absolute;
@@ -42,7 +41,6 @@ body{
   width: 100%;
 }
 
-/* Estilo do Dropdown */
 .dropdown:hover .dropdown-menu {
   display: block;
   opacity: 1;
@@ -51,15 +49,14 @@ body{
   pointer-events: auto;
 }
 
-/* Estilo do menu dropdown */
 .dropdown-menu {
   background-color: #ffffff;
   border: none;
-  margin-top: 0; /* remove atraso */
+  margin-top: 0; 
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
-  display: block; /* mantemos block para manipular via opacity */
+  display: block; 
   visibility: hidden;
   pointer-events: none;
 }
@@ -73,11 +70,12 @@ body{
   background-color: #ffffff;
 }
 
-/* Tamanho da logo */
 .navbar-brand img {
   height: 55px;
   margin-left: 15%;
 }
+
+/* HERO */
 
 .hero {
     background: url('Site.png') center center/cover no-repeat;
@@ -129,9 +127,30 @@ body{
     margin-top: 3%;
   }
 
+  /* SOBRE */
 
+  .sobre .container h1{
+    color: #E0004D;
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 42px;
+  }
 
+  .sobre .container p{
+    font-size: 22px;
+    margin-top: 2%;
+  }
 
+  .sobre .container .botao-sobre{
+    border: 5px solid #E0004D;
+    background-color: #E0004D;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+    width: 20%;
+    margin-top: 2%;
+  }
 
 
 
