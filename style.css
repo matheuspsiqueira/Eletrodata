@@ -11,7 +11,8 @@ body{
 
 /* Gradiente da Navbar */
 .navbar-gradient {
-  background: linear-gradient(to right, #00558C, #012169, #00558C);
+  background: linear-gradient(to right, #00558C, #012169);
+  height: 80px;
 }
 
 /* Links da Navbar */
@@ -29,7 +30,7 @@ body{
   left: 0;
   bottom: 0;
   height: 2px;
-  top: 0;
+  top: 33px;
   width: 0;
   background-color: #E0004D;
   transition: width 0.3s ease-in-out;
@@ -74,4 +75,36 @@ body{
 .navbar-brand img {
   height: 50px;
   margin-left: 15%;
+}
+
+@media (max-width: 991px){
+  li.nav-item.dropdown{
+    height: 40px;
+  }
+
+  .navbar-brand img{
+    margin-left: 0;
+  }
+
+  .dropdown {
+    position: relative;
+    z-index: 2;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    position: relative;
+    z-index: 1;
+  }
+
+  .navbar-nav .nav-link:after{
+    background-color: #ffffff00;
+  }
 }
