@@ -7,6 +7,7 @@
 body{
     background-color: #fdfaf5;
     font-family: var(--default-font);
+    overflow-x: hidden;
 }
 
 /* Gradiente da Navbar */
@@ -77,34 +78,108 @@ body{
   margin-left: 15%;
 }
 
-@media (max-width: 991px){
-  li.nav-item.dropdown{
-    height: 40px;
+.hero {
+    background: url('Site.png') center center/cover no-repeat;
+    height: 100vh;
+    color: #E0004D;
+  }
+  
+  .hero .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero .container {
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    margin-left: 5%;
+    background-color: #fdfaf5;
+    padding: 50px;
+    width: 700px;
+    height: 500px;
   }
 
-  .navbar-brand img{
+  .hero .linha{
+    width: 15%;
+    border: 5px solid #00558C;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+  }
+  
+  .hero p {
+    font-size: 30px;
+    margin-top: 5%;
+    color: #343434;
+  }
+
+  .hero .botao{
+    border: 5px solid #E0004D;
+    background-color: transparent;
+    color: #343434;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    width: 35%;
+    margin-top: 3%;
+  }
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+  .navbar-brand img {
     margin-left: 0;
   }
 
-  .dropdown {
-    position: relative;
-    z-index: 2;
-  }
-
-  .dropdown-menu {
-    position: absolute;
-    z-index: 9999;
-    top: 100%;
-    left: 0;
-    width: 100%;
-  }
-
-  .navbar-nav .nav-link {
-    position: relative;
+  .navbar-collapse {
+    background: linear-gradient(to right, #00558C, #012169);
     z-index: 1;
   }
 
-  .navbar-nav .nav-link:after{
-    background-color: #ffffff00;
+  .navbar-nav {
+    background: linear-gradient(to right, #00558C, #012169);
+    padding: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    color: white !important;
+  }
+
+  .navbar-nav .nav-link:after {
+    background-color: transparent;
+  }
+
+  /* IMPORTANTE: permite que o dropdown se comporte como acordeão no mobile */
+  .dropdown-menu {
+    position: static !important;
+    float: none;
+    width: 100%;
+    margin: 0;
+    background-color: #ffffff !important;
+    border: none;
+    box-shadow: none;
+    display: none;
+  }
+
+  /* mostra o dropdown quando o botão foi clicado */
+  .dropdown.show .dropdown-menu {
+    display: block !important;
+  }
+
+  /* Itens do dropdown */
+  .dropdown-menu .dropdown-item {
+    color: #00558c !important;
+  }
+
+  .dropdown-menu .dropdown-item:hover {
+    color: #E0004D !important;
+    background-color: #ffffff;
   }
 }
