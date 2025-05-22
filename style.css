@@ -78,27 +78,40 @@ body{
 /* HERO */
 
 .hero {
-    background: url('Site.png') center center/cover no-repeat;
-    height: 100vh;
-    color: #E0004D;
-  }
-  
-  .hero .overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .hero .container {
-    position: absolute;
-    z-index: 2;
-    top: 20%;
-    margin-left: 5%;
-    background-color: #fdfaf5d0;
-    padding: 50px;
-    width: 700px;
-    height: 500px;
-  }
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  color: #E0004D;
+}
+
+/* Pseudo-elemento para a imagem animada */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('Site.png') center center / cover no-repeat;
+  z-index: 0;
+  animation: zoomInOut 15s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  top: 20%;
+  margin-left: 5%;
+  background-color: #fdfaf5d0;
+  padding: 50px;
+  width: 700px;
+  height: 500px;
+}
 
   .hero .linha{
     width: 15%;
@@ -126,6 +139,15 @@ body{
     width: 35%;
     margin-top: 3%;
   }
+
+  @keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 
   /* SOBRE */
 
