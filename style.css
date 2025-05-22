@@ -155,11 +155,11 @@ body{
     color: #E0004D;
     margin-top: 5%;
     font-weight: bold;
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .sobre .container p{
-    font-size: 22px;
+    font-size: 25px;
     margin-top: 2%;
   }
 
@@ -167,7 +167,7 @@ body{
     border: 5px solid #E0004D;
     background-color: #E0004D;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
     padding: 5px;
     width: 20%;
