@@ -309,7 +309,7 @@ body{
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: url('Site\ ELETRODATA\ \(1\).png') center center / cover no-repeat;
+    background: url('Site ELETRODATA (1).png') center center / cover no-repeat;
     z-index: 0;
     animation: zoomInOut 15s ease-in-out infinite;
     transform-origin: center center;
@@ -318,14 +318,68 @@ body{
   .estados .overlay {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-color: #00548c3a;
+    background-color: #00548c31;
     z-index: 1;
   }
 
-  .estados .container h1{
-    font-size: 40px;
-    z-index: 4;
-  }
+ .estados .container {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  height: 100vh;
+  align-items: flex-start;
+}
+
+.conteudo-esquerdo {
+  z-index: 3;
+  width: 40%;
+}
+
+.estados .container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #E0004D;
+  margin-bottom: 20px;
+}
+
+.lista-estados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 300px;
+}
+
+.lista-estados p {
+  background-color: #00558C;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  flex: 1 1 45%;
+  text-align: center;
+  margin: 0;
+}
+
+.mapa {
+  position: absolute;
+  top: 0;
+  right: -30%;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 2;
+  pointer-events: none; /* impede a imagem de atrapalhar cliques */
+}
+
+.mapa img {
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+}
 
 @media (max-width: 991px) {
   .navbar-brand img {
