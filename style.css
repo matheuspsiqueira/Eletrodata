@@ -570,6 +570,10 @@ body{
     width: 80%;
   }
 
+  .sobre .container .card{
+    width: 50%;
+  }
+
   .sobre .container .card h2 {
     font-size: 24px;
   }
