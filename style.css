@@ -4,6 +4,10 @@
   --nav-font: "Roboto",  sans-serif;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body{
     background-color: #fdfaf5;
     font-family: var(--default-font);
@@ -300,7 +304,7 @@ body{
   .estados {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 85vh;
   color: #E0004D;
   }
 
@@ -329,6 +333,7 @@ body{
   padding: 40px;
   height: 100vh;
   align-items: flex-start;
+  margin-top: 50px;
 }
 
 .conteudo-esquerdo {
@@ -347,7 +352,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .lista-estados p {
@@ -362,21 +367,20 @@ body{
 }
 
 .mapa {
-  position: absolute;
-  top: 0;
-  right: -30%;
+  position: relative;
+  top: -60px;
   height: 100%;
-  width: 60%;
+  width: 70%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   z-index: 2;
-  pointer-events: none; /* impede a imagem de atrapalhar cliques */
+  pointer-events: none;
 }
 
 .mapa img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 70%;
   max-width: none;
   object-fit: contain;
 }
@@ -428,4 +432,166 @@ body{
     background-color: #ffffff;
   }
 
+   /* HERO */
+  .hero .container {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+    top: 35%;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 22px;
+  }
+
+  .hero .botao {
+    font-size: 20px;
+    width: 60%;
+  }
+
+  /* SOBRE */
+  .sobre .container p {
+    font-size: 20px;
+  }
+
+  .sobre .container .botao-sobre {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .sobre .container .sobre-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .sobre .container .card {
+    width: 90%;
+  }
+
+  .sobre .container .card p {
+    font-size: 18px;
+  }
+
+  /* OPORTUNIDADE */
+  .oportunidade .container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .oportunidade .container .deficiente {
+    align-items: flex-start;
+    width: 60%;
+  }
+
+  .oportunidade .container .deficiente h1 {
+    width: 100%;
+    font-size: 22px;
+    text-align: left;
+  }
+
+  /* ESTADOS */
+  .estados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .estados .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .conteudo-esquerdo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .mapa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .mapa img {
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+  }
 }
+
+/* Telas até 575px - celulares */
+@media (max-width: 575px) {
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero .botao {
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .sobre .container h1 {
+    font-size: 30px;
+  }
+
+  .sobre .container p {
+    font-size: 18px;
+  }
+
+  .sobre .container .botao-sobre {
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .sobre .container .card h2 {
+    font-size: 24px;
+  }
+
+  .sobre .container .card p {
+    font-size: 16px;
+  }
+
+  .oportunidade .container button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .oportunidade .container .deficiente img {
+    width: 50px;
+  }
+
+  .oportunidade .container .deficiente h1 {
+    font-size: 18px;
+  }
+
+  .estados .container h1 {
+    font-size: 28px;
+  }
+
+  .lista-estados p {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
