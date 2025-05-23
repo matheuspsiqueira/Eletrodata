@@ -544,6 +544,10 @@ body{
 /* Telas até 575px - celulares */
 @media (max-width: 575px) {
 
+  .hero .container{
+    top: 25%;
+  }
+
   .hero h1 {
     font-size: 24px;
   }
@@ -563,15 +567,15 @@ body{
 
   .sobre .container p {
     font-size: 18px;
+    text-align: justify;
   }
 
   .sobre .container .botao-sobre {
-    font-size: 18px;
     width: 80%;
   }
 
   .sobre .container .card{
-    width: 50%;
+    width: 80%;
   }
 
   .sobre .container .card h2 {
@@ -587,12 +591,18 @@ body{
     padding: 10px 20px;
   }
 
+  .oportunidade .container .deficiente{
+    align-items: center;
+    width: 80%;
+  }
+
   .oportunidade .container .deficiente img {
     width: 50px;
   }
 
   .oportunidade .container .deficiente h1 {
     font-size: 18px;
+    align-items: center;
   }
 
   .estados{
