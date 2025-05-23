@@ -591,6 +591,16 @@ body{
     font-size: 18px;
   }
 
+  .estados{
+    height: 120vh;
+  }
+
+  .estados .container{
+    margin-top: 0;
+    padding: 0;
+    height: 1200px;
+  }
+
   .estados .container h1 {
     font-size: 28px;
   }
@@ -598,6 +608,21 @@ body{
   .lista-estados p {
     font-size: 14px;
     padding: 6px 10px;
+  }
+
+  .mapa{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .mapa img{
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
