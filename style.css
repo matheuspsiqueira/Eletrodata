@@ -182,7 +182,7 @@ body{
     padding: 5px;
     width: 20%;
     margin-top: 2%;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
   }
 
   .sobre .container .botao-sobre:hover{
@@ -278,7 +278,7 @@ body{
     border: none;
     background-color: #fdfaf5;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
   }
 
   .oportunidade .container button:hover{
@@ -350,9 +350,17 @@ body{
 .estados .container h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #E0004D;
-  margin-bottom: 20px;
+  color: #ffffff;
+  margin-bottom: 0px;
+  font-style: oblique;
 }
+
+  .estados .container .linha{
+    width: 30%;
+    border: 2px solid #E0004D;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 
 .lista-estados {
   display: flex;
