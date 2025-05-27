@@ -237,7 +237,12 @@ body{
   height: 100px;
 }
 
-  .sobre .container .card h2{
+  .numero-linha {
+    display: flex;
+    gap: 5px;
+  }
+
+  .numero-linha h2 {
     color: #E0004D;
     font-size: 30px;
     font-weight: bold;
