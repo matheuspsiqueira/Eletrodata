@@ -13,7 +13,7 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('/media/Site.png') center center / cover no-repeat;
+  background: url('../media/Site.png') center center / cover no-repeat;
   z-index: 0;
   animation: zoomInOut 15s ease-in-out infinite;
   transform-origin: center center;
