@@ -1,0 +1,56 @@
+/* HERO */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  color: #ffffff;
+  background: url('/media/carrossel-1 2.png') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+  .hero .linha{
+    width: 18%;
+    border: 4px solid #E0004D;
+    margin-top: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 80px;
+    margin: 0;
+  }
+
+
+  /*SOBRE*/
+
+  .sobre .container h1{
+    color: #E0004D;
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .sobre .container p{
+    font-size: 24px;
+  }
+  
