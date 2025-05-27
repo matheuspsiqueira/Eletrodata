@@ -168,6 +168,11 @@ body{
     font-size: 40px;
   }
 
+  .sobre .container .linha{
+    width: 10%;
+    border: 3px solid #00558C;
+  }
+
   .sobre .container p{
     font-size: 25px;
     margin-top: 2%;
@@ -356,7 +361,7 @@ body{
 
   .estados .container .linha{
     width: 30%;
-    border: 2px solid #E0004D;
+    border: 3px solid #E0004D;
     margin-top: 0;
     margin-bottom: 20px;
   }
@@ -463,16 +468,20 @@ body{
 
 .contato {
   padding: 60px 20px;
-  background-color: #f8f8f8;
   text-align: center;
 }
 
 .contato h1 {
   font-size: 40px;
-  margin-bottom: 40px;
   text-align: left;
   color: #E0004D;
   font-weight: bold;
+}
+
+.contato .linha{
+  width: 10%;
+  border: 3px solid #00558C;
+  margin-bottom: 40px;
 }
 
 .contato-card {
@@ -541,6 +550,11 @@ footer .social a img {
   width: 24px;
   height: 24px;
   object-fit: contain;
+}
+
+footer .social .youtube{
+  width: 28px;
+  height: 28px;
 }
 
 @media (max-width: 991px) {
@@ -805,3 +819,8 @@ footer .social a img {
   }
 }
 
+@media (min-width: 1399px) {
+  .mapa{
+    left: -10%;
+  }
+}
