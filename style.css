@@ -258,6 +258,56 @@ body{
   }
 
 
+  /* SERVIÇOS */
+
+  .servicos {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .servicos .container h1{
+    font-size: 40px;
+    text-align: left;
+    color: #E0004D;
+    font-weight: bold;
+  }
+
+  .servicos .container .linha{
+    width: 10%;
+    border: 3px solid #00558C;
+    margin-bottom: 40px;
+  }
+
+  .cards-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.card-servico {
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card-servico img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.card-servico p {
+  margin-top: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #E0004D;
+}
+
+.card-servico:hover {
+  transform: translateY(-5px);
+}
+
   /* OPORTUNIDADE */
 
   .oportunidade{
