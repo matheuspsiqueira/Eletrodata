@@ -352,7 +352,6 @@ body{
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 0px;
-  font-style: oblique;
 }
 
   .estados .container .linha{
@@ -378,6 +377,13 @@ body{
   flex: 1 1 45%;
   text-align: center;
   margin: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lista-estados p:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .mapa {
@@ -418,7 +424,8 @@ body{
   align-items: flex-start;
 }
 
-.cliente .esquerda h1 {
+.cliente .esquerda button{
+  border: none;
   font-size: 36px;
   font-weight: bold;
   background-color: #00558C;
@@ -427,6 +434,11 @@ body{
   width: 100%;
   margin-bottom: 0;
   text-align: center;
+  transition: 0.3s ease;
+}
+
+.cliente .esquerda button:hover{
+  padding-bottom: 30px;
 }
 
 .cliente .esquerda img {
