@@ -1,19 +1,41 @@
-  const contadores = document.querySelectorAll('.contador');
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".contador");
 
-  contadores.forEach(contador => {
-    const atualizarContador = () => {
-      const target = +contador.getAttribute('data-target');
-      const atual = +contador.innerText;
+    counters.forEach(counter => {
+      const target = +counter.getAttribute("data-target");
+      const format = counter.getAttribute("data-format");
+      const duration = 2000; // duração total em ms
+      const startTime = performance.now();
 
-      const incremento = target / 200; // quanto menor o divisor, mais rápido
-
-      if (atual < target) {
-        contador.innerText = Math.ceil(atual + incremento);
-        setTimeout(atualizarContador, 10);
-      } else {
-        contador.innerText = target.toLocaleString('pt-BR'); // formata com pontos
+      // Função de easing (easeOutCubic)
+      function easeOutCubic(t) {
+        return 1 - Math.pow(1 - t, 3);
       }
-    };
 
-    atualizarContador();
+      function updateCounter(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1); // máx = 1
+        const easedProgress = easeOutCubic(progress);
+        const current = Math.round(target * easedProgress);
+
+        if (format === "milhoes") {
+          counter.textContent = current.toLocaleString();
+        } else {
+          counter.textContent = current;
+        }
+
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter);
+        } else {
+          // Texto final personalizado, se necessário
+          if (format === "milhoes") {
+            counter.textContent = "4 milhões m²";
+          } else {
+            counter.textContent = target;
+          }
+        }
+      }
+
+      requestAnimationFrame(updateCounter);
+    });
   });
