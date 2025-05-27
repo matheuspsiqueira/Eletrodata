@@ -51,6 +51,56 @@
   }
 
   .sobre .container p{
-    font-size: 24px;
+    font-size: 22px;
   }
   
+
+  /*VIDEO*/
+
+  .video{
+    margin-top: 70px;
+    background-color: #d8d8d8;
+  }
+
+
+  /*VALORES-CARDS*/
+
+  .valores-cards {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.valores-cards .card {
+  padding: 30px;
+  max-width: 300px;
+  flex: 1 1 250px;
+  background-color: #fdfaf5;
+  border: none;
+}
+
+.valores-cards .card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.valores-cards .card h2 {
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: #E0004D;
+  font-weight: bold;
+}
+
+.valores-cards .card .linha{
+  width: 25%;
+  border: 3px solid #00558C;
+  margin-bottom: 10px;
+}
+
+.valores-cards .card p {
+  font-size: 20px;
+}
