@@ -394,17 +394,20 @@ body{
 
  .estados .container {
   display: flex;
+  flex-wrap: wrap; /* Permite quebrar em telas pequenas */
+  gap: 40px;
+  justify-content: space-between;
   position: relative;
   z-index: 2;
   padding: 40px;
-  height: 100vh;
+  height: auto; /* Removido 100vh para evitar corte em mobile */
   align-items: flex-start;
   margin-top: 50px;
 }
 
 .conteudo-esquerdo {
   z-index: 3;
-  width: 40%;
+  flex: 1 1 400px; /* Cresce mas respeita um mínimo */
 }
 
 .estados .container h1 {
@@ -442,26 +445,24 @@ body{
 }
 
 .lista-estados p:hover{
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .mapa {
-  position: relative;
-  top: -60px;
-  height: 100%;
-  width: 70%;
+  flex: 1 1 400px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   z-index: 2;
   pointer-events: none;
+  margin-top: 20px;
 }
 
 .mapa img {
+  width: 100%;
+  max-width: 500px;
   height: auto;
-  width: 70%;
-  max-width: none;
   object-fit: contain;
 }
 
@@ -494,11 +495,12 @@ body{
   width: 100%;
   margin-bottom: 0;
   text-align: center;
+  height: 80px;
   transition: 0.3s ease;
 }
 
 .cliente .esquerda button:hover{
-  padding-bottom: 30px;
+  height: 100px;
 }
 
 .cliente .esquerda img {
