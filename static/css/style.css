@@ -842,3 +842,18 @@ footer .social .youtube{
     left: -10%;
   }
 }
+
+@media (max-width: 1398px){
+  .sobre .container .card{
+    padding: 30px 20px 20px;
+  }
+
+  .oportunidade .container{
+    gap: 30px;
+    flex-wrap: nowrap;
+  }
+
+  .contato-card{
+    flex-wrap: nowrap;
+  }
+}
