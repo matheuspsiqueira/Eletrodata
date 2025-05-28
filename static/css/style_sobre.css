@@ -84,6 +84,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  margin-bottom: 120px;
 }
 
 .video::after {
@@ -119,18 +120,18 @@
 
 
 
-  /*VALORES-CARDS*/
+  /*MISSÃO-CARDS*/
 
-  .valores-cards {
+  .missao-cards {
   display: flex;
   justify-content: center;
   gap: 300px;
   flex-wrap: wrap;
   text-align: center;
-  padding: 40px 0;
+  padding-top: 40px;
 }
 
-.valores-cards .card {
+.missao-cards .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,25 +142,202 @@
   border: none;
 }
 
-.valores-cards .card img {
+.missao-cards .card img {
   width: 80px;
   height: 80px;
   margin-bottom: 20px;
 }
 
-.valores-cards .card h2 {
+.missao-cards .card h2 {
   font-size: 40px;
   margin-bottom: 5px;
   color: #E0004D;
   font-weight: bold;
 }
 
-.valores-cards .card .linha{
+.missao-cards .card .linha{
   width: 20%;
   border: 3px solid #00558C;
   margin-bottom: 10px;
 }
 
-.valores-cards .card p {
+.missao-cards .card p {
   font-size: 20px;
+}
+
+
+/* VALORES-CARDS */
+
+.valores .container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.valores .container img{
+  width: 80px;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.valores .container h2{
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: #E0004D;
+  font-weight: bold;
+}
+
+.valores .container .linha{
+  width: 5%;
+  border: 3px solid #00558C;
+  margin-bottom: 40px;
+}
+
+.valores .cards-valores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: center;
+  margin-bottom: 40px;
+  background-color: #fdfaf5;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  perspective: 1000px;
+  height: 80px; 
+  width: 100%;
+  position: relative;
+}
+
+.card p{
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+/*ANIMAÇÃO-FLIP*/
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #00558C;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  text-align: center;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.card-front {
+  z-index: 2;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #00558C;
+}
+
+
+/*CERTIFICACAO*/
+
+.certificacao{
+  background-color: #E0004D;
+}
+
+.container-certificacao {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+}
+
+.coluna-esquerda,
+.coluna-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.topo-esquerda {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topo-esquerda img{
+  width: 80px;
+}
+
+.topo-esquerda .img2{
+  width: 120px;
+}
+
+.titulo-certificacao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.titulo-certificacao h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+.titulo-certificacao .linha {
+  width: 50%;
+  border: 3px solid #00558C;
+}
+
+.divisor-vertical {
+  width: 3px;
+  background-color: #ffffff;
+  height: 150px;
+}
+
+.coluna-direita p{
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.certificacao-imagens {
+  display: flex;
+  gap: 20px;
+}
+
+.certificacao-imagens img {
+  width: 100px;
+  height: 100px;
+}
+
+.certificacao-imagens .img3{
+  width: 250px;
+  height: 100px;
 }
