@@ -84,7 +84,7 @@ body{
 /* FOOTER */
 
 footer {
-  background-color: #00558C;
+  background: linear-gradient(to right, #012169, #00558C);
   color: #fff;
   padding: 20px 40px;
 }

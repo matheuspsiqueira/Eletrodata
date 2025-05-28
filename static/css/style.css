@@ -514,13 +514,14 @@ footer .container {
 
 footer p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 footer .social {
   display: flex;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 footer .social a img {
@@ -658,6 +659,8 @@ footer .social .youtube{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 0;
+    margin-top: 0;
   }
 
   .conteudo-esquerdo {
@@ -691,6 +694,8 @@ footer .social .youtube{
   .card-contato{
     padding: 30px 0;
   }
+
+
 }
 
 /* Telas até 575px - celulares */
@@ -776,6 +781,10 @@ footer .social .youtube{
     padding: 6px 10px;
   }
 
+  .conteudo-esquerdo{
+    flex: none;
+  }
+
   .mapa{
     width: 100%;
     max-width: 100%;
@@ -789,6 +798,10 @@ footer .social .youtube{
     max-width: 100%;
     height: auto;
     display: block;
+  }
+
+  .cliente p{
+    text-align: justify;
   }
 
   .card-contato .margin{
