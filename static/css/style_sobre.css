@@ -322,6 +322,10 @@
   height: 150px;
 }
 
+.coluna-direita{
+  padding-left: 100px;
+}
+
 .coluna-direita p{
   color: #ffffff;
   font-size: 18px;
