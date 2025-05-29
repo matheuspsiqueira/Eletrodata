@@ -148,6 +148,10 @@
   margin-bottom: 20px;
 }
 
+.missao-cards .card .img2{
+  width: 100px;
+}
+
 .missao-cards .card h2 {
   font-size: 40px;
   margin-bottom: 5px;
@@ -210,7 +214,7 @@
   background-color: transparent;
   border: none;
   perspective: 1000px;
-  height: 80px; 
+  height: 100px; 
   width: 100%;
   position: relative;
 }
@@ -344,4 +348,33 @@
 .certificacao-imagens .img3{
   width: 250px;
   height: 100px;
+}
+
+
+/*POLITICA*/
+
+.politica .container h1{
+  font-size: 40px;
+  font-weight: bold;
+  color: #E0004D;
+  margin-top: 40px;
+}
+
+.politica .container .linha{
+  width: 10%;
+  border: 3px solid #00558C;
+  margin-bottom: 40px;
+}
+
+.politica .container p{
+  font-size: 22px;
+}
+
+.subtitulo{
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.politica .container .margin{
+  margin-bottom: 30px;
 }
