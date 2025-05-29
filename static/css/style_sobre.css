@@ -243,7 +243,7 @@
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  background-color: #00558C;
+  background: linear-gradient(to right, #012169, #00558C, #012169);
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -260,7 +260,6 @@
 
 .card-back {
   transform: rotateY(180deg);
-  background-color: #00558C;
 }
 
 
