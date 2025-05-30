@@ -1,0 +1,148 @@
+
+/* HERO */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pseudo-elemento para a imagem animada */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('../img/bg-etica.png') center center / cover no-repeat;
+  z-index: 0;
+  animation: zoomInOut 15s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  .hero .linha{
+    width: 18%;
+    border: 4px solid #E0004D;
+    margin-top: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 80px;
+    margin: 0;
+    color: #ffffff;
+  }
+
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+/*ETICA*/
+
+.etica .etica-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.etica .texto {
+  flex: 1;
+  min-width: 500px;
+  margin-left: 7%;
+}
+
+.etica .imagem img {
+  max-width: 600px;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.etica h1 {
+  font-size: 40px;
+  width: 70%;
+  color: #E0004D;
+  margin-top: 40px;
+}
+
+.etica .linha {
+    width: 15%;
+    border: 3px solid #00558C;
+    margin-bottom: 30px;
+}
+
+.etica p{
+    font-size: 22px;
+    text-align: justify;
+}
+
+
+/* COMPLIANCE */
+
+.compliance .compliance-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.compliance .texto {
+  flex: 1;
+  min-width: 500px;
+  margin-left: 7%;
+  background-color: #00558C;
+  padding: 30px;
+}
+
+.compliance .imagem img {
+  max-width: 600px;
+  width: 84%;
+  height: auto;
+  object-fit: contain;
+}
+
+.compliance h1 {
+  font-size: 40px;
+  font-weight: bold;
+  width: 70%;
+  color: #E0004D;
+  margin-top: 40px;
+}
+
+.compliance .linha {
+    width: 8%;
+    border: 3px solid #00558C;
+    margin-bottom: 30px;
+}
+
+.compliance p{
+    font-size: 22px;
+    text-align: justify;
+    color: #ffffff;
+}
