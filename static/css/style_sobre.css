@@ -456,3 +456,154 @@
 .politica .container .margin-footer{
   margin-bottom: 80px;
 }
+
+
+/* RESPONSIVO GERAL */
+
+@media (max-width: 1200px) {
+  .missao-cards {
+    gap: 100px;
+  }
+
+  .valores .cards-valores {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container-certificacao {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .divisor-vertical {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .missao-cards {
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .valores .cards-valores {
+    grid-template-columns: 1fr;
+  }
+
+  .carrossel {
+    gap: 20px;
+  }
+
+  .btn-nav {
+    font-size: 24px;
+    padding: 8px 12px;
+  }
+
+  .item {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero .linha {
+    width: 30%;
+  }
+
+  .sobre .container h1,
+  .politica .container h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .sobre .container p,
+  .politica .container p {
+    font-size: 18px;
+    text-align: justify;
+    padding: 0 20px;
+  }
+
+  .video-wrapper iframe {
+    width: 90%;
+    height: 300px;
+  }
+
+  .missao-cards .card h2,
+  .valores .container h2 {
+    font-size: 30px;
+  }
+
+  .certificacao-imagens {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .certificacao-imagens img {
+    width: 80px;
+    height: auto;
+  }
+
+  .certificacao-imagens .img3 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .video-wrapper iframe {
+    height: 200px;
+  }
+
+  .valores .container .linha,
+  .sobre .container .linha,
+  .politica .container .linha {
+    width: 40%;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  .item {
+    width: 160px;
+  }
+
+  .ano {
+    font-size: 18px;
+  }
+
+  .btn-nav {
+    font-size: 20px;
+    padding: 6px 10px;
+  }
+
+  .topo-esquerda img,
+  .topo-esquerda .img2 {
+    width: 60px;
+  }
+
+  .titulo-certificacao h1 {
+    font-size: 28px;
+  }
+
+  .certificacao-imagens {
+    gap: 10px;
+  }
+}
