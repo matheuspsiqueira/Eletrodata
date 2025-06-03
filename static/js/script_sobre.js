@@ -1,3 +1,22 @@
+  document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector(".hero-carousel");
+    const slides = document.querySelectorAll(".hero-carousel .slide");
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+
+    function updateSlide() {
+      const offset = -currentSlide * 100;
+      carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlide();
+    }, 4000);
+
+    updateSlide();
+  });
+
 const carrossel = document.getElementById("carrossel");
 const leftBtn = document.querySelector(".btn-nav.left");
 const rightBtn = document.querySelector(".btn-nav.right");
