@@ -253,7 +253,7 @@
 /* Smartphones */
 @media (max-width: 768px) {
   .hero {
-    height: 60vh;
+    height: 100vh;
   }
 
   .hero h1 {
