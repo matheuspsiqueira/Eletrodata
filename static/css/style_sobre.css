@@ -470,7 +470,6 @@
   }
 
   .container-certificacao {
-    flex-direction: column;
     align-items: flex-start;
   }
 
@@ -488,7 +487,7 @@
 
   .missao-cards {
     flex-direction: column;
-    gap: 80px;
+    gap: 100px;
     align-items: center;
   }
 
@@ -508,6 +507,12 @@
   .item {
     width: 200px;
   }
+
+  .linha {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 }
 
 @media (max-width: 768px) {
@@ -547,7 +552,6 @@
   }
 
   .certificacao-imagens {
-    flex-direction: column;
     align-items: flex-start;
   }
 
@@ -557,7 +561,7 @@
   }
 
   .certificacao-imagens .img3 {
-    width: 100%;
+    width: 60%;
     height: auto;
   }
 }
@@ -574,7 +578,7 @@
   .valores .container .linha,
   .sobre .container .linha,
   .politica .container .linha {
-    width: 40%;
+    width: 40px;
   }
 
   .card p {
@@ -596,14 +600,18 @@
 
   .topo-esquerda img,
   .topo-esquerda .img2 {
-    width: 60px;
+    width: 80px;
   }
 
   .titulo-certificacao h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .certificacao-imagens {
-    gap: 10px;
+    gap: 25px;
+  }
+
+  .coluna-direita p{
+    font-size: 15px;
   }
 }
