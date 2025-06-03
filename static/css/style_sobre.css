@@ -520,8 +520,13 @@
 }
 
 @media (max-width: 768px) {
+
+  .hero-carousel .slide {
+    object-position: top;
+  }
+
   .hero {
-    height: 100vh;
+    height: 80vh;
   }
 
   .hero h1 {
